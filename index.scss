@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+*{
+    box-sizing: border-box;
+    transition: all 300ms ease-in-out;
+}
+
+.main {
+    margin-top: 4rem;
+    h1{
+        font-family: 'Tilt Prism', cursive;
+        font-size: 4rem; 
+    }
+
+    .box_container{
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+
+        div {
+            border: 2px solid;
+            border-radius: .5rem;
+            width: 5rem;
+            height: 5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        margin-top: 5rem;
+        gap: .5rem;
+
+        label{
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: rgb(100, 41, 92);
+        }
+        .item{
+            border-radius: .3rem;
+            border-width: 1px;
+            padding: .5rem 1rem;
+        }
+        .submit, .reset {
+            width: 30%;
+            margin-top: 1rem;
+            align-self: flex-start;
+            background-color: rgb(100, 41, 92);
+            border: none;
+            border-radius: .2rem;
+            padding: .3rem 0;
+            color: #fff;
+            font-size: 1.2rem;
+        }
+        .reset{
+            align-self: flex-end;
+            margin-top: -3rem;
+        }
+        .submit:hover, .reset:hover {
+            color: #000;
+            background-color: rgb(200, 147, 207);
+        }
+        
+    }
+
+}
+
+.searched {
+    background-color: rgb(197, 64, 64);
+    transition: all 900ms ease-in-out;
+    color: #fff;
+}
+.selected {
+    background-color: rgb(37, 97, 37);
+    transition: all 300ms ease-in-out;
+    color: #fff;
+}
